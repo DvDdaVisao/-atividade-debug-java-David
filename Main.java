@@ -9,7 +9,7 @@ public class Main {
         Scanner ler = new Scanner(System.in);
         System.out.println("------====[ C A L C U L A D O R A]====------\n\n");
 
-        double total= 10;
+        double total;
 
         System.out.println("Digite um número:");
         double num1 = ler.nextDouble();
@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Digite outro número:");
         double num2 = ler.nextDouble();
 
-        System.out.println("Digite a operaç\não:\n(+, -, / e x)");
+        System.out.println("Digite a operação:\n(+, -, /, x)");
         String opera = ler.next();
 
         switch (opera) {
@@ -26,15 +26,15 @@ public class Main {
                 System.out.println("Resultado = "+total);
                 break;
             case "-":
-                total=num1/num2;
-                System.out.println("Resultado = "+total);
-            case "/":
                 total=num1-num2;
                 System.out.println("Resultado = "+total);
+            case "/":
+                total=num1/num2;
+                System.out.println("Resultado = "+total);
                 break;
-            case "*":
+            case "x":
                 total=num1*num2;
-                System.out.println("Resultado = "+num1);
+                System.out.println("Resultado = "+total);
                 break;
         }
         }
